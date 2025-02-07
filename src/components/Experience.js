@@ -7,21 +7,22 @@ const Experience = () => {
 
   const workExperience = [
     {
-      title: 'Senior React Developer',
-      company: 'Tech Solutions Inc.',
-      date: '2022 - Present',
-      location: 'Remote',
+      title: 'React.js Frontend Developer',
+      company: 'CJSS Technologies',
+      date: 'Aug 2022- Present',
+      location: 'Hyderabad, India',
       points: [
-        'Led development of multiple React-based web applications',
-        'Implemented responsive designs using Tailwind CSS',
+        'Developed and maintained large-scale e-commerce applications using React.js and Redux',
+        'Implemented test cases achieving 90% coverage',
+        'Built responsive UI components using Tailwind CSS',
         'Optimized application performance and reduced load times by 40%',
-        'Mentored junior developers and conducted code reviews',
+        'Collaborated with cross-functional teams to deliver high-quality features',
       ],
     },
     {
-      title: 'Frontend Developer',
-      company: 'Digital Innovations',
-      date: '2020 - 2022',
+      title: 'React.js Developer',
+      company: 'Error Technologies',
+      date: 'Jun 2021 - Aug 2022',
       location: 'Hyderabad, India',
       points: [
         'Developed and maintained client websites using React and Redux',
@@ -34,25 +35,14 @@ const Experience = () => {
 
   const education = [
     {
-      degree: 'Master of Computer Applications',
-      institution: 'University Name',
-      date: '2018 - 2020',
-      location: 'City, State',
+      degree: 'BSC Computer Science',
+      institution: 'Satavahana University',
+      date: '2017 - 2021',
+      location: 'Karimanagar, Telangana',
       points: [
         'Specialized in Web Technologies',
-        'Completed projects in React and Node.js',
-        'Graduated with distinction',
-      ],
-    },
-    {
-      degree: 'Bachelor of Computer Applications',
-      institution: 'College Name',
-      date: '2015 - 2018',
-      location: 'City, State',
-      points: [
-        'Foundation in Computer Science',
-        'Web Development fundamentals',
-        'Academic excellence award',
+        'Completed projects in React.Js',
+        'GPA: 8.15',
       ],
     },
   ];
@@ -74,7 +64,7 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="experience" className="py-12 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

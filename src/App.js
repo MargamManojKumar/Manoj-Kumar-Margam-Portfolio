@@ -5,8 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,16 +19,15 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className={`min-h-screen bg-white dark:bg-dark transition-colors duration-300`}>
+    <div className={`min-h-screen bg-white dark:bg-dark transition-colors duration-300 flex flex-col`}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main>
+      <main className="flex-grow">
         <Hero />
         <About />
         <Skills />
         <Experience />
-        <Blog />
-        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

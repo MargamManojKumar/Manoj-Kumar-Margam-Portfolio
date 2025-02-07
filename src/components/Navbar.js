@@ -11,8 +11,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     { name: 'About', to: 'about' },
     { name: 'Skills', to: 'skills' },
     { name: 'Experience', to: 'experience' },
-    { name: 'Blog', to: 'blog' },
-    { name: 'Contact', to: 'contact' },
   ];
 
   return (
@@ -20,12 +18,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <motion.span
-              className="text-xl font-bold text-primary cursor-pointer"
+            <motion.div
+              className="text-xl font-bold bg-primary text-white px-4 py-2 rounded-lg cursor-pointer"
               whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               MMK
-            </motion.span>
+            </motion.div>
           </div>
 
           {/* Desktop Navigation */}
@@ -36,7 +35,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 to={item.to}
                 smooth={true}
                 duration={500}
-                className="text-gray-600 dark:text-gray-300 hover:text-primary cursor-pointer"
+                offset={-80}
+                spy={true}
+                activeClass="text-primary"
+                className="text-gray-600 dark:text-gray-300 hover:text-primary cursor-pointer transition-colors"
               >
                 {item.name}
               </Link>
@@ -84,7 +86,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 to={item.to}
                 smooth={true}
                 duration={500}
-                className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary"
+                offset={-80}
+                spy={true}
+                activeClass="text-primary"
+                className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
