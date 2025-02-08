@@ -32,7 +32,7 @@ const Hero = () => {
     {
       icon: FaPhone,
       value: '+91 9100572103',
-      href: 'tel:+919398538354',
+      href: 'tel:+919100572103',
     },
     {
       icon: FaEnvelope,
